@@ -5,3 +5,4 @@ if (element) {
     // Change the HTML content of the element
     element.innerHTML = "<bold>Modified by klemplus<bold/> 🔥<br>©️ Copyright 2024 Animevietsub. All rights reserved.";
 }
+document.title = "I luv AnimeVietsub";
