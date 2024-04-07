@@ -11,5 +11,5 @@ document.title = "Animevietsub ❤️";
 var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
 link.type = 'image/x-icon';
 link.rel = 'icon';
-link.href = 'URL_OF_YOUR_NEW_ICON';
+link.href = 'https://raw.githubusercontent.com/igjnaj/JavascriptTest/main/B6F35539-8CC4-419D-B676-970B78B357D9.png';
 document.getElementsByTagName('head')[0].appendChild(link);
