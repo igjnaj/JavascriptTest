@@ -8,4 +8,4 @@ if (element) {
 // Change the tab name
 document.title = "Animevietsub ❤️";
 // Change the favicon to a custom icon using a URL
-document.querySelector("link[rel='icon']").href = "URL_OF_YOUR_CUSTOM_ICON";
+document.querySelector("link[rel='icon']").href = "https://raw.githubusercontent.com/igjnaj/JavascriptTest/main/B6F35539-8CC4-419D-B676-970B78B357D9.png";
