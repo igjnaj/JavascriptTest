@@ -1,5 +1,5 @@
 // List of image URLs
-const imageUrls = [
+const imageList = [
   'https://raw.githubusercontent.com/igjnaj/JavascriptTest/main/1493-yuukafumo.png',
   'https://raw.githubusercontent.com/igjnaj/JavascriptTest/main/1694-yuyukofumo.png',
   'https://raw.githubusercontent.com/igjnaj/JavascriptTest/main/1896-cirnofumo%202.png',
@@ -9,19 +9,18 @@ const imageUrls = [
   'https://raw.githubusercontent.com/igjnaj/JavascriptTest/main/5227-yukarifumo.png',
   'https://raw.githubusercontent.com/igjnaj/JavascriptTest/main/5595-alicefumo.png',
 ];
-
+ 
 // Function to pick a random image URL
 function getRandomImageUrl() {
-  return imageUrls[Math.floor(Math.random() * imageUrls.length)];
+  return imageList[Math.floor(Math.random() * imageList.length)];
 }
 
-// Function to insert the random image at the very end of the page
-function insertRandomImage() {
-  const imageUrl = getRandomImageUrl();
-  const imgElement = document.createElement('img');
-  imgElement.src = imageUrl;
-  document.body.appendChild(imgElement);
+// Function to insert the image into the HTML body
+function insertImage() {
+  var imageUrl = getRandomImageUrl();
+  var imageHtml = '<img src="' + imageUrl + '" alt="Err: idk check the console">';
+  document.body.insertAdjacentHTML('beforeend', imageHtml);
 }
 
-// Call the function to insert the random image when the page finishes loading
-window.addEventListener('load', insertRandomImage);
+// Call the insertImage function to insert the random image when needed
+insertImage();
